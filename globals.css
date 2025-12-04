@@ -1,0 +1,236 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #0f172a 0, #020617 50%, #000 100%);
+  color: #e5e7eb;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px 64px;
+}
+
+.section {
+  border-radius: 16px;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.08), transparent 60%),
+              radial-gradient(circle at bottom right, rgba(94, 234, 212, 0.08), transparent 60%),
+              rgba(15, 23, 42, 0.9);
+  padding: 20px 18px;
+  margin-bottom: 18px;
+  backdrop-filter: blur(16px);
+}
+
+.section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #e5e7eb;
+}
+
+.section-subtitle {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin-bottom: 12px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  padding: 4px 9px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  background: rgba(15, 23, 42, 0.9);
+  color: #cbd5f5;
+}
+
+.badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: #22c55e;
+}
+
+.hero {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.hero-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 12px 0 6px;
+  background: linear-gradient(to right, #38bdf8, #a855f7, #facc15);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 0.95rem;
+  color: #9ca3af;
+  max-width: 600px;
+}
+
+.hero-highlight {
+  font-size: 0.88rem;
+  color: #e5e7eb;
+  margin-top: 8px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 2.2fr 1.2fr;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.hero-card {
+  border-radius: 14px;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.12), transparent 60%),
+              rgba(15, 23, 42, 0.95);
+  padding: 12px;
+}
+
+.hero-side-card {
+  border-radius: 14px;
+  border: 1px solid rgba(248, 250, 252, 0.08);
+  background: rgba(15, 23, 42, 0.9);
+  padding: 10px;
+  font-size: 0.8rem;
+  color: #cbd5f5;
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+  align-items: center;
+}
+
+.cta-main {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 9px 16px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.92rem;
+  font-weight: 600;
+  background: linear-gradient(to right, #22c55e, #65a30d);
+  color: #020617;
+}
+
+.cta-main:hover {
+  opacity: 0.94;
+}
+
+.cta-secondary {
+  font-size: 0.82rem;
+  color: #9ca3af;
+}
+
+.cta-secondary span {
+  color: #facc15;
+}
+
+.list {
+  padding-left: 18px;
+  margin: 0;
+  font-size: 0.88rem;
+}
+
+.list li {
+  margin-bottom: 4px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  margin-top: 8px;
+}
+
+.table th,
+.table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid rgba(51, 65, 85, 0.8);
+}
+
+.table th {
+  text-align: left;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 0.78rem;
+}
+
+.chip {
+  border-radius: 999px;
+  padding: 4px 8px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  color: #cbd5f5;
+}
+
+.code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.78rem;
+  background: rgba(15, 23, 42, 0.9);
+  padding: 2px 6px;
+  border-radius: 6px;
+  border: 1px solid rgba(30, 64, 175, 0.8);
+}
+
+.footer {
+  margin-top: 24px;
+  font-size: 0.75rem;
+  color: #6b7280;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 16px 12px 40px;
+  }
+
+  .hero-title {
+    font-size: 1.4rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+}
