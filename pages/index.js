@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 export default function Home() {
-  const botLink = "https://t.me/testqlewetabot"; // TODO: замени на реального бота
+  const botLink = "https://t.me/tocabocaxbot"; // TODO: замени на реального бота
   const devContact = "https://t.me/qleweta";
 
   return (
@@ -352,3 +352,4 @@ export default function Home() {
     </>
   );
 }
+
